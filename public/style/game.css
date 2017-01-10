@@ -1,0 +1,107 @@
+body {
+	overflow: hidden;
+  font-family: "proxima-nova-soft", sans-serif;
+}
+
+canvas {
+	display: block;
+}
+
+#ui {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#start-screen {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*transform: translate(-50%, -50%);*/
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding-top: 20vh;
+}
+
+#start-screen input, #start-screen button {
+  display: block;
+  margin: 0 auto;
+}
+
+#start-screen input {
+  text-align: center;
+  width: 100px;
+  font-size: 1.2em;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 5px 10px;
+  color: white;
+  font-family: "proxima-nova-soft", sans-serif;
+}
+
+#start-screen input:focus {
+  outline: none;
+  border-color: gray;
+}
+
+#start-screen #logo {
+  display: block;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+#start-screen #controls {
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
+#start-screen p {
+  text-align: center;
+	margin: 10px;
+	color: rgba(225,225,225, 0.5);
+}
+
+#leaderboard {
+  position: absolute;
+  right: 0;
+  color: white;
+  margin: 20px;
+  font-size: 1.3em;
+}
+
+#leaderboard li {
+  margin: 3px 0;
+}
+
+#leaderboard .score {
+  float: right;
+  padding: 0 0 0 10px;
+}
+
+#version {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: rgba(225,225,225, 0.5);
+  font-size: 0.9em;
+  margin: 5px;
+}
+
+#stormheart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: rgba(225,225,225, 0.5);
+  font-size: 0.9em;
+  margin: 5px;
+	text-decoration: none;
+}
+
+#stormheart:hover {
+	color: rgba(225,225,225, 0.8);
+}

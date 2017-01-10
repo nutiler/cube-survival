@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Survival Squares™</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/game.css">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://use.typekit.net/ksm8eqv.js"></script>
+	<script>
+		try {
+			Typekit.load({
+				async: true
+			});
+		}
+		catch (e) {}
+	</script>
+</head>
+
+<body>
+	<div id="ui">
+		<div id="start-screen">
+			<img id="logo" src="assets/logo.png" alt="sh-logo">
+			<img id="controls" src="assets/controls.png" alt="game controls">
+			<input id="nick" type="text" placeholder="name" onkeydown="startGame(event)" autofocus>
+			<p>ENTER TO START</p>
+		</div>
+		<a href="/scores"><div id="version">SCOREBOARD VERSION 1.0</div></a>
+		<a href="http://stormheart.net/team" id="stormheart">STORMHEART</a>
+		<div id="leaderboard">
+			<ol id="leaders">
+			</ol>
+		</div>
+	</div>
+	<script src="js/phaser.min.js"></script>
+	<script src="js/helpers.js"></script>
+	<script src="js/Bullet.js"></script>
+	<script src="js/RemotePlayer.js"></script>
+	<script src="js/Player.js"></script>
+	<script src="js/Trail.js"></script>
+	<script src="js/Pixel.js"></script>
+	<script src="js/eventHandlers.js"></script>
+	<script src="js/game.js"></script>
+	<audio autoplay>
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+</body>
+
+</html>

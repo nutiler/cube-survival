@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+  <style>
+    body {
+      padding-top: 90px;
+    }
+  </style>
+</head>
+
+<body>
+      <h1><span class="fa fa-sign-in"></span>REGISTRATION</h1>
+      <form action="/auth/signup" method="post">
+        <div class="form-group">
+          <label>Username:</label>
+          <input type="text" class="form-control" name="username" id="login-username" required>
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" class="form-control" name="email" id="login-email" required>
+        </div>
+        <div class="form-group">
+          <label>Password:</label>
+          <input type="password" class="form-control" name="hashed_password" id="login-password" required>
+        </div>
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="input-group">
+              <span class="input-group-addon">
+            <input type="checkbox" class=form-control value="true" name="admin" id="admin">
+            </span>
+            </div>
+          </div>
+          <div class="col-lg-10"></div>
+          <button type="submit" class="btn btn-lg">Sign up</button>
+      </form>
+
+      <hr>
+
+      <p>Have an account? <a href="/auth/login">Login</a></p>
+      <p>Play as a guest. <a href="/">Play</a></p>
+
+      </div>
+
+    </div>
+</body>
+
+</html>

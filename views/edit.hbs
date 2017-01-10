@@ -1,0 +1,24 @@
+<form class="form" action="/scores/{{id}}?_method=PUT" method="post">
+  <div class="form-group">
+    <label for="username">USERNAME:</label>
+    <input value="{{username}}" type="text" class="form-control" id="username" placeholder="Enter a username." name="username">
+  </div>
+  <div class="form-group">
+    <label for="shots">SHOTS:</label>
+    <input value="{{shots}}" type="number" class="form-control" id="shots" placeholder="Total shots fired." name="shots">
+    </input>
+  </div>
+    <div class="form-group">
+    <label for="kills">KILLS:</label>
+    <input value="{{kills}}" type="number" class="form-control" id="kills" placeholder="How many kills?" name="kills">
+    </input>
+  </div>
+    <div class="form-group">
+    <label for="pixels">PIXELS:</label>
+    <input value="{{pixels}}" type="number" class="form-control" id="pixels" placeholder="How many pixels?" name="pixels">
+    </input>
+  </div>
+  <button type="submit" class="btn btn-default btn-success">
+    EDIT
+  </button>
+</form>

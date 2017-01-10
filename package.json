@@ -1,0 +1,30 @@
+{
+  "name": "survivalsquares",
+  "version": "1.0.0",
+  "description": "",
+  "main": "game.js",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.15.2",
+    "cookie-session": "^2.0.0-alpha.2",
+    "express": "^4.10.2",
+    "flash": "^1.1.0",
+    "hbs": "^4.0.1",
+    "knex": "^0.12.6",
+    "node-gameloop": "^0.1.0",
+    "pg": "^6.1.2",
+    "socket.io": "^1.4.5",
+    "tower-uuid": "^0.1.0"
+  },
+  "devDependencies": {
+    "flightplan": "^0.6.13"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "engines": {
+    "node": "6.7.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

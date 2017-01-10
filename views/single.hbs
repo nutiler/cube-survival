@@ -1,0 +1,29 @@
+<h2>PLAYER: {{username}}</h2>
+<ul class="breadcrumb">
+  <li><a href="#">SHOTS FIRED:</a></li>
+  <li><a href="#">{{shots}}</a></li>
+</ul>
+
+<ul class="breadcrumb">
+  <li><a href="#">PLAYER KILLS:</a></li>
+  <li><a href="#">{{kills}}</a></li>
+</ul>
+<ul class="breadcrumb">
+  <li><a href="#">DAMAGE TAKEN:</a></li>
+  <li><a href="#">{{damage}}</a></li>
+</ul>
+<ul class="breadcrumb">
+  <li><a href="#">PIXELS DESTROYED:</a></li>
+  <li><a href="#">{{pixels}}</a></li>
+</ul>
+<form action="/scores/{{id}}?_method=DELETE" method="post">
+  <a href="/scores/{{id}}/edit" type="button" class="btn btn-default btn-warning">
+    EDIT SCORE
+  </a>
+  <button type="submit" class="btn btn-default btn-danger">
+    DELETE SCORE
+  </button>
+  <a href="/scores" type="button" class="btn btn-default">
+    BACK
+  </a>
+</form>

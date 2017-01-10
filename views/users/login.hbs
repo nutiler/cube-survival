@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        body {
+            padding-top: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span class="fa fa-sign-in"></span>LOGIN</h1>
+
+    <!-- LOGIN FORM -->
+    <form action="/auth/login" method="post">
+        <div class="form-group">
+            <label>USERNAME</label>
+            <input type="text" class="form-control" name="username" id="login-username" required>
+        </div>
+        <div class="form-group">
+            <label>PASSWORD</label>
+            <input type="password" class="form-control" name="hashed_password" id="login-password" required>
+        </div>
+
+        <button type="submit" class="btn btn-lg">Login</button>
+    </form>
+
+    <hr>
+
+    <p>No account? <a href="/auth/signup">Register</a></p>
+    <p>Play as a guest. <a href="/">Play</a></p>
+
+    </div>
+
+    </div>
+</body>
+
+</html>

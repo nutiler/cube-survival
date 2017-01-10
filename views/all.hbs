@@ -1,0 +1,21 @@
+{{#each scores}}
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{username}}</h3>
+  </div>
+  <a href="/scores/{{id}}">
+  <div class="panel-body list-group-item">
+    SHOTS: {{shots}}&emsp;&emsp;&emsp;&emsp;KILLS: {{kills}}&emsp;&emsp;&emsp;&emsp;PIXELS: {{pixels}}&emsp;&emsp;&emsp;&emsp;DAMAGE: {{damage}}
+  </div>
+</div></a>
+{{/each}}
+
+  
+</ul>
+<a type="button" class="btn btn-default btn-primary" href="/scores/add">
+  ADD PLAYER
+</a>
+<a type="button" class="btn btn-default btn-primary" href="/auth/login">
+  LOGIN
+</a>
